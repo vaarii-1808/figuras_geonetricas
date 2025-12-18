@@ -1,0 +1,32 @@
+ion-card-content {
+  /* Aplicar estilos de texto para que coincida con la figura (generalmente más pequeño y menos negrita que el título) */
+  font-size: 0.9em; 
+  line-height: 1.4;
+
+  /* Estilo para las definiciones ("Donde: P: perímetro, d: diámetro...") */
+  .definitions {
+    color: #cc0000; /* Color rojo (similar al de la figura) */
+    font-weight: bold;
+    margin-top: 10px;
+  }
+}
+
+/* **CLAVE: Limitar el tamaño de la imagen dentro de la tarjeta** */
+ion-card-content img {
+  /* Ajusta este valor al tamaño que se muestra en la figura (parece ser menos de 100px) */
+  max-width: 50px; 
+  height: auto; /* Mantiene la proporción de la imagen */
+  display: block; /* Asegura que la imagen se pueda centrar */
+  margin: 15px auto; /* Centra la imagen horizontalmente */
+}
+
+/* Si tienes la etiqueta <h1> o similar para los títulos dentro del componente */
+h1 {
+  font-size: 1.8em; /* Ajusta el tamaño del título "Círculo" */
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.2em; /* Ajusta el tamaño del subtítulo "Perímetro" */
+  color: var(--ion-color-medium);
+}

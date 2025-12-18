@@ -1,0 +1,22 @@
+/* Aplicar estilos generales de texto */
+ion-card-content {
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+/* **CLAVE: Limitar el tamaño de la imagen del triángulo** */
+ion-card-content ion-img {
+  /* El triángulo en la figura es un poco más grande que el círculo, ajusta si es necesario */
+  width: 100%; 
+  height: auto;
+  display: block;
+  margin: 15px auto;
+}
+
+/* Estilo para la fórmula matemática (p=a+b+c) si la has puesto como texto centrado */
+.formula-display {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2em;
+  margin: 10px 0;
+}

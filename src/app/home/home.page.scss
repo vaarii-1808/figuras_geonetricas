@@ -1,0 +1,18 @@
+/* Estilo para simular la vista móvil en el centro de la pantalla */
+ion-content {
+  --background: #f4f5f8; /* Color de fondo típico de Ionic */
+}
+
+.content-container {
+  /* Limita el ancho del contenido para simular la vista móvil */
+  max-width: 100px;
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  padding-top: 5px;
+}
+
+/* El ion-select se muestra más arriba, sin borde específico en la vista principal */
+ion-list {
+  max-width: 100px;
+  margin: 5px auto 0 auto;
+  padding: 0;
+}

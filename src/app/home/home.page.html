@@ -1,0 +1,22 @@
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Calculadora de Perímetros</ion-card-title>
+    </ion-card-header>
+    
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Seleccione figura geométrica:</ion-label>
+        <ion-select [(ngModel)]="figuraSeleccionada" interface="action-sheet">
+          <ion-select-option value="circulo">Círculo</ion-select-option>
+          <ion-select-option value="triangulo">Triángulo Escaleno</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Mostrar componente según selección -->
+  <app-circulo *ngIf="figuraSeleccionada === 'circulo'"></app-circulo>
+  <app-triangulo *ngIf="figuraSeleccionada === 'triangulo'"></app-triangulo>
+</ion-content>
+
